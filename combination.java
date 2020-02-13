@@ -6,7 +6,7 @@ public class combination{
     int sum=0;
     System.out.println("enter 3 number 0-9: ");
     for (int i=0;i<3 ;i++ ) {
-      System.out.println((i+1)+" number: ");
+      System.out.print((i+1)+" number: ");
       num[i]=scan.nextInt();
       sum+=num[i];
     }
