@@ -37,3 +37,11 @@ public SalariedWorker(String D_name,double rates)
 super(D_name,rates);
 }
 }
+public class WorkerSalary{
+public static void main(String args[])
+{
+DailyWorker w1=new DailyWorker("Kamlesh",5.0);
+SalariedWorker w2=new SalariedWorker("Suresh",8.0);
+w1.ComPay(8);
+w2.ComPay();
+}}
