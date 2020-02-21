@@ -24,3 +24,9 @@ System.out.println("days= "+days);
 System.out.println("salary= "+salary);
 }
 }
+class DailyWorker extends Worker{
+public DailyWorker(String D_name,double rates)
+{
+super(D_name,rates);
+}
+}
