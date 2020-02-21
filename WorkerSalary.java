@@ -30,3 +30,10 @@ public DailyWorker(String D_name,double rates)
 super(D_name,rates);
 }
 }
+class SalariedWorker extends Worker
+{
+public SalariedWorker(String D_name,double rates)
+{
+super(D_name,rates);
+}
+}
