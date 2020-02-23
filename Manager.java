@@ -17,4 +17,9 @@ class Employee
   {
     return this.salary;
   }
+  public void IncreaseSalary(double percent)
+  {
+    this.salary+=(percent/100);
+    System.out.println("Increased salary= "+this.salary);
+  }
 }
