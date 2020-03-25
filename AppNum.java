@@ -1,6 +1,7 @@
+import java.math.*;
 public class AppNum
 {
-  int num=10;
+  int num=25;
   public boolean isTriangular()
   {
     int i,sum=0;
@@ -15,8 +16,16 @@ public class AppNum
     else
     return false;
   }
+  public boolean isSquare()
+  {
+    double sqroot=Math.sqrt(num);
+    if(sqroot==Math.floor(sqroot))
+    return true;
+    else
+    return false;
+  }
   public static void main(String[] args) {
     AppNum n=new AppNum();
-    System.out.println(n.isTriangular());
+    System.out.println(n.isSquare());
   }
 }
