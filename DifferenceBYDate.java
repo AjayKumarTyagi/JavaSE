@@ -54,7 +54,7 @@ public class DifferenceBYDate
   {
     AnotherDate d1=new AnotherDate();
     //AnotherDate d2=new AnotherDate();
-    d1.EnterDate(24,2,2020);
-    d1.DifferenceDate(2,9,2000);
+    d1.EnterDate(27,2,2020);
+    d1.DifferenceDate(28,9,2000);
   }
 }
