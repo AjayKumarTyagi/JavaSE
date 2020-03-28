@@ -1,17 +1,17 @@
 interface Age
 {
-  String message="Is eligible to vote";
-  public void EnterAge(int age);
+  int age=18;
+  public void EnterAge();
 }
 
 class  IsEligible implements Age
 {
-  public void EnterAge(int age)
+  public void EnterAge()
   {
-    if(age<18)
+    if(this.age<18)
     System.out.println("Not eligible to vote");
     else
-    System.out.println(message);
+    System.out.println("Is eligible to vote");
   }
 }
 
@@ -20,6 +20,6 @@ public class Voter
   public static void main(String args[])
   {
     IsEligible p1=new IsEligible();
-    p1.EnterAge(19);
+    p1.EnterAge();
   }
 }
