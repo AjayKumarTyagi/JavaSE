@@ -39,10 +39,11 @@ class Manager extends Employees
 public class Employee
 {
   public static void main(String[] args) {
-    Employees e1=new Employees("Ajay",121,99999);
+    Employees e1=new Employees("Ajay",121,10000);
     Manager m1=new Manager("Bosco",564,8750472,"pug");
     String name=e1.DisplayName();
     Double sal=e1.DisplaySalary();
     System.out.println("name: "+name+" salary: "+sal);
+    e1.IncreaseSalary(10);
   }
 }
