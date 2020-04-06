@@ -6,7 +6,7 @@ class Thread1 extends Thread // thread 1
 {
   public void run() // run method overriding
   {
-    System.out.println("thread1 starting");
+    System.out.println("thread1 extends thread class starting");
     Scanner scan=new Scanner(System.in);
     String s="";
     String word="";
@@ -37,7 +37,7 @@ class Thread2 extends Thread // thread 2
 {
   public void run() // run method overriding
   {
-    System.out.println("thread2 starting");
+    System.out.println("thread2 implement runnable starting");
     Scanner scan=new Scanner(System.in);
     String s="";
     int count;
@@ -77,15 +77,15 @@ public class SearchWords // main thread
     Thread1 t1=new Thread1();
     Thread2 t2=new Thread2();
     t1.start(); // thread1 started
-    try
+    /*try
     {
     // join will let thread1 finish and then only other thread will start
     t1.join();
-    }
+  }
     catch(InterruptedException e)
     {
       System.out.println("thread interrupted");
-    }
+    }*/
     t2.start();
     System.out.println("main thread ending");
   }
